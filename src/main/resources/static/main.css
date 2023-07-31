@@ -1,1 +1,6 @@
-body { background-color: rgb(176, 191, 214); }
+body { background-color: rgb(108, 243, 169); }
+
+.img-estudiante {
+    width: 100px;
+    height: 100px;
+}

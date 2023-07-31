@@ -1,13 +1,42 @@
-@server = https://texai-musical-goldfish-q9pqwgxpjf4wvw-8080.preview.app.github.dev
-@employees = {{server}}/api/employees
+@server = https://juliorivero1996-obscure-space-adventure-5wqjv54r779f64-8080.preview.app.github.dev
+@instrumentos = {{server}}/api/instrumentos
+
 ###
-GET {{employees}}
+GET {{instrumentos}}
 ###
-POST {{employees}}
+POST {{instrumentos}}
 Content-Type: application/json
 
 {
-  "firstName" : "Bilbo",
-  "lastName" : "Baggins",
-  "description" : "burglar"
+  "nombre" : "Quena",
+  "categoria" : "Insrumento de Viento",
+  "descripcion" : "Tubo con orificios, tapados hacen sonar diferente sonidos"
 }
+
+
+
+### EJERCICIO DE CLASE
+
+@estudiantes = {{server}}/api/estudiantes
+###
+GET {{estudiantes}}
+###
+POST {{estudiantes}}
+Content-Type: application/json
+
+{
+  "nombre" : "Idat",
+  "edad" : "50",
+  "dni" : "https://i.ytimg.com/vi/CSFSjKxuJ_s/hqdefault.jpg"
+}
+###
+PUT {{estudiantes}}/1
+Content-Type: application/json
+
+{
+  "nombre": "Julio Rivero",
+  "edad": "20",
+  "dni": "https://cdn2.mediotiempo.com/uploads/media/2019/08/06/cristiano-ronaldo-revela-significado-grito.jpg"
+}
+
+
